@@ -1,11 +1,11 @@
-const Car = require('./Car.js');
+//Task 2
+const car = require("./car.js");
 
-describe("car", ()=>{
-    test("access the properties", ()=> {
-        let car = new Car("m1",0,"e1");
+test("can access car properties", ()=>{
 
-        expect(car.manufacturer).toBe("m1");
-        expect(car.price).toBe(0);
-        expect(car.engine).toBe("e1");
-    })
+    let car1 = new car("Tesla", 70000, "Electric")
+    expect((car1.manufacturer)===("Tesla"));
+    expect((car1.price)===(70000));
+    expect((car1.engine)===("Electric"));
 })
+
